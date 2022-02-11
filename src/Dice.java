@@ -9,4 +9,5 @@ public class Dice {
     public int rollDice(){
         return noOfDice * (int)Math.ceil((Math.random() * 6));
     }
+
 }

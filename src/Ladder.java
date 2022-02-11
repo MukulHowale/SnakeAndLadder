@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class Ladder{
+public class Ladder implements MarkerForSnakeAndLadder{
 
     private int noOfLadders;
 
@@ -12,11 +12,9 @@ public class Ladder{
     }
 
     public boolean validPosition(int position){
-
         if(topBottomMap.containsKey(position)){
             return true;
         }
-
         return false;
     }
 

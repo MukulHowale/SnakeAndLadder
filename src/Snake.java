@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class Snake{
+public class Snake implements MarkerForSnakeAndLadder{
 
     private int noOfSnakes;
 
@@ -12,11 +12,9 @@ public class Snake{
     }
 
     public boolean validPosition(int position){
-
         if(headTailMap.containsKey(position)){
             return true;
         }
-
         return false;
     }
 
